@@ -3,19 +3,45 @@ VirtualBox Installation
 Documentation:
 https://www.virtualbox.org/manual/UserManual.html [1]
 https://www.virtualbox.org/wiki/Guest_OSes [2]
+https://www.virtualbox.org/manual/ch03.html#guestossupport [7]
+https://www.virtualbox.org/manual/ch01.html#virtintro [6]
 
 Quick Launch Bar and other custom toolbars
-http://www.howtogeek.com/howto/windows-7/add-the-quick-launch-bar-to-the-taskbar-in-windows-7/
+http://www.howtogeek.com/howto/windows-7/add-the-quick-launch-bar-to-the-taskbar-in-windows-7/ [5]
 
 Taskbar
-http://en.wikipedia.org/wiki/Quick_launch_bar#Taskbar_elements
+http://en.wikipedia.org/wiki/Quick_launch_bar#Taskbar_elements [4]
 
 Download:
 https://www.virtualbox.org/wiki/Downloads [3]
 
 Why virtualize? [1]
-Terminology [1]
-Supported OSes, [2]
+Allows use of software in multiple environments.
+Recover from improper installations, crashes, etc.
+Use systems in different environments
+On the enterprise level, consolidate multiple systems into fewer physical devices (saves hunreds of dollars)
+
+Terminology [6]
+In terms of virtual box, there are few words needed (much less than the idea of virtualization)
+-Host operating system (host OS)
+--This is the system VirtualBox will be installed on
+-Guest operating system (guest OS)
+--This is the system VirtualBox will virtualize onto the host OS
+-Virtual Machine (VM)
+--This is the reference to the hardware the guest OS will use
+-Guest additions
+--Software that optimizes the guest OS within its VM
+
+Supported OSs, [2][7]
+This can be divided into two (2) categories:
+-1. Supported host OSs
+-2. Supported guest OSs
+The former are the operating systems where VBox may be installed. In other words, OSs that can support VMs. The latter
+refers to OSs that can be installed onto a VM. In theory, any x86 (32-bit) OS may be installed onto a VM. However this
+availablity, Oracle optimizes and provides guest additions to a handful of OSs. In other words, these supported OSs
+are best suited for virtualization. Documentation and communities can provide detailed instructions, tips, varying 
+environments, as well as some troubleshooting. For other OSs, more steps and further research are needed for optimal
+setups.
 
 Installing
 Before clicking on anything, be sure to read prompts licenses, warnings, et cetera
@@ -53,7 +79,7 @@ they are all checked. They are:
 --This will place a shortcut icon on your desktop for more immediate access
 --Will not check this because I like to keep my desktop clean.
 -2. Create a shortcut in the Quick Launch Bar
---This places an icon in the taskbar for single-click launching
+--This places an icon in the taskbar for single-click launching [4][5]
 --Will keep checked.
 -3. Register file associations
 --This will update the system's registry files so that all VB files are associated with VB
