@@ -45,13 +45,34 @@ the feature to be installed. If you specified different drives by mistake there 
 -2. Create the directory you want (it only searches for directories that are all ready on the drive)
 -3. Exit the installer and try again.
 
-After all the customizations for the features, there will be more customizations about the install itself. They are:
+Once done with the features customizations and disk usages, click "Next >"
+
+After all the customizations for the features, there will be more customizations about the install itself. By default, 
+they are all checked. They are:
 -1. Create a shortcut on the desktop
 --This will place a shortcut icon on your desktop for more immediate access
 --Will not check this because I like to keep my desktop clean.
 -2. Create a shortcut in the Quick Launch Bar
 --This places an icon in the taskbar for single-click launching
---Will keep checked
+--Will keep checked.
 -3. Register file associations
---
-By default, they are all checked.
+--This will update the system's registry files so that all VB files are associated with VB
+--Will keep checked so we do not have to manually do so later.
+Click "Next >" to continue
+
+If the network feature was selected for installation, the next screen will warn you about installing a network driver. 
+This installs a driver to use the network card installed so that your virtual machines can connect to the internet. 
+During its installation, it will reset the connection (temporarily) disconnecting you from the network (LAN, WAN, WiFi,
+etc.).
+
+If you are performing a task over the network (e.g. downloading files, streaming music, uploading files, playing a 
+game, etc.), finish those tasks or put them on pause. Crazy errors will happen if they are in the middle of something. 
+Usually you may just have to re-do it. Click "Yes" if you are ready.
+
+Now that all the customizations for the installation are finished, now is the time for installation. Here we can 
+"Cancel" the entire process, go "< Back" to change a customization, or "Install". For myself, the installation part
+took about thirty (30) seconds to finish.
+
+When you are successful, there is an option to launch right away when you click "Finish".
+
+<END>
