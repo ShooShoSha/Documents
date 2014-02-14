@@ -1,0 +1,57 @@
+VirtualBox Installation
+
+Documentation:
+https://www.virtualbox.org/manual/UserManual.html [1]
+https://www.virtualbox.org/wiki/Guest_OSes [2]
+
+Quick Launch Bar and other custom toolbars
+http://www.howtogeek.com/howto/windows-7/add-the-quick-launch-bar-to-the-taskbar-in-windows-7/
+
+Taskbar
+http://en.wikipedia.org/wiki/Quick_launch_bar#Taskbar_elements
+
+Download:
+https://www.virtualbox.org/wiki/Downloads [3]
+
+Why virtualize? [1]
+Terminology [1]
+Supported OSes, [2]
+
+Installing
+Before clicking on anything, be sure to read prompts licenses, warnings, et cetera
+Download from site [3]
+Run installer
+-Double click file
+--Security prompt, click "Run"
+-Using command prompt or powershell
+--Navigate to directory or Shift+Right-click in directory select "Open command window here"
+--Begin typing name of file (use Tab for auto-completion)
+---Possible file name: 'VirtualBox-X.X.X-X-Win.exe', where x is positive integer
+---Pressing Tab multiple times will cycle through possibilities
+--*This usually bypasses security warnings, so be careful with this method
+-Click "Next >"
+
+The next screen allows customizations. Here you can decide which features to include in the installation. Some 
+customizations:
+-Whether to include a feature or not
+-Specify a location where that feature will be installed
+--In other words, you specify every feature to be in its own directory on any drive (including network or external)
+--*Would not recommend doing this, but it is available
+
+The "Disk Usage" button shows which drive(s) the features will be installed on, how much disk space is required, what 
+the resulting available space will be after installation, and will highlight drives that do not have enough space for 
+the feature to be installed. If you specified different drives by mistake there are three (3) options you may take:
+-1. Change the directory again (if you want the default see step 3)
+-2. Create the directory you want (it only searches for directories that are all ready on the drive)
+-3. Exit the installer and try again.
+
+After all the customizations for the features, there will be more customizations about the install itself. They are:
+-1. Create a shortcut on the desktop
+--This will place a shortcut icon on your desktop for more immediate access
+--Will not check this because I like to keep my desktop clean.
+-2. Create a shortcut in the Quick Launch Bar
+--This places an icon in the taskbar for single-click launching
+--Will keep checked
+-3. Register file associations
+--
+By default, they are all checked.
